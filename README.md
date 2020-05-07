@@ -7,6 +7,10 @@ Quercus ilex, and their hybrids. Please, see the details in:
 "ddRADseq analysis of Quercus ilex and Q. suber hybrids to identify species
 genomic boundaries and permeability" (submitted).
 
+Refer to the README.pdf in the "Package" folder for further information of the
+workflow and Bash and R scripts
+(https://github.com/GGFHF/ddRAD-CORK-HYB/blob/master/Package/README.pdf).
+
  This software has been developed by:
 
     GI Genética, Fisiología e Historia Forestal
