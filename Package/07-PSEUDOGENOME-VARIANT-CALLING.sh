@@ -64,7 +64,7 @@ while read FILE_SAM; do
     if [ $? -ne 0 ]; then echo 'Script ended with errors.'; exit 1; fi
 
     # convert SORTED_BAM file to VCF format
-    $SAMTOOLSDIR/samtools mpileup -g -f $PSEUDOGENOME_DIR/pseudogenome.fasta $FILE_SORTED_BAM | $BCFTOOLS/bcftools call -c -v - > $FILE_VCF
+    $BCFTOOLS/bcftools  mpileup -g -f $PSEUDOGENOME_DIR/pseudogenome.fasta $FILE_SORTED_BAM | $BCFTOOLS/bcftools call -m > $FILE_VCF
     if [ $? -ne 0 ]; then echo 'Script ended with errors.'; exit 1; fi    
 
 done < $DATA_DIR/sam-files.txt
